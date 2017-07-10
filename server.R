@@ -6,6 +6,7 @@ library(MASS)
 library(tibble)
 library(NonCompart)
 library(ncar)
+library(markdown)
 
 source("function.R")
 

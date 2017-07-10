@@ -10,7 +10,7 @@ navbarPage(
     title = "Data",
     sidebarLayout(
       sidebarPanel(
-        sliderInput("nSubj", "Subjects", min = 1, max = 500, value = 10),
+        sliderInput("nSubj", "Subjects", min = 1, max = 100, value = 10),
         sliderInput("CL", "Clearance", min = 1, max = 50, value = 30),
         sliderInput("V", "Volume of Distribution", min = 1, max = 500, value = 100),
         textInput("Time", "Sampling Time", value = "0, 0.25, 0.5, 1, 2, 4, 5, 7, 9, 12, 24"),
@@ -33,7 +33,7 @@ navbarPage(
   tabPanel(
     title = "Details",
     tags$h2("Individual Plots"),
-    plotOutput("concTimeFacet"),
+    plotOutput("concTimeFacet", height = "800px"),
     tags$h2("Raw Data"),
     tableOutput("concTable")
   ),
